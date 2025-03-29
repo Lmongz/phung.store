@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>PHUNGSTORE</title>
+  <meta property="og:title" content="PHUNGSTORE" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <style data-tag="reset-style-sheet">
+html{line-height:1.15;}h1,li,div,ul,h2,body,p,pre{margin-left:0;}p,li,ul,h2,div,body,pre,h1{margin-bottom:0;}[type="reset"],[type="button"],[type="submit"]{-webkit-appearance:button;}ul,pre,body,h1,div,h2,li,p{margin-right:0;}div,li,h2,h1,pre,body,ul,p{margin-top:0;}h3,h1,h2,pre,ul,li,p,div{padding-left:0;}ul,h3,div,h1,li,pre,h2,p{padding-bottom:0;}p,div,pre,h1,h3,h2,ul,li{padding-right:0;}pre,div,p,h1,h3,li,h2,ul{padding-top:0;}[type="button"]::-moz-focus-inner{border-left-style:none;}[type="button"]::-moz-focus-inner{border-bottom-style:none;}*{box-sizing:border-box;}[type="button"]::-moz-focus-inner{border-right-style:none;}[type="button"]::-moz-focus-inner{border-top-style:none;}[type="button"]::-moz-focus-inner{padding-left:0;}[type="button"]::-moz-focus-inner{padding-bottom:0;}*{border-left-width:0;}[type="button"]::-moz-focus-inner{padding-right:0;}[type="button"]::-moz-focus-inner{padding-top:0;}[type="reset"]::-moz-focus-inner{border-left-style:none;}[type="reset"]::-moz-focus-inner{border-bottom-style:none;}[type="reset"]::-moz-focus-inner{border-right-style:none;}[type="reset"]::-moz-focus-inner{border-top-style:none;}[type="reset"]::-moz-focus-inner{padding-left:0;}figcaption,h3,h4,h6,figure,button,blockquote,h5{margin-left:0;}button,h3,figcaption,h5,h6,h4,figure,blockquote{margin-bottom:0;}button,h3,blockquote,figcaption,h6,h4,h5,figure{margin-right:0;}h4,figcaption,figure,h3,h6,blockquote,button,h5{margin-top:0;}[type="reset"]::-moz-focus-inner{padding-bottom:0;}[type="reset"]::-moz-focus-inner{padding-right:0;}[type="reset"]::-moz-focus-inner{padding-top:0;}[type="submit"]::-moz-focus-inner{border-left-style:none;}figcaption,h4,blockquote,h5,h6,figure{padding-left:0;}h6,figcaption,h5,h4,figure,blockquote{padding-bottom:0;}figcaption,h6,figure,h5,h4,blockquote{padding-right:0;}h4,blockquote,figure,figcaption,h6,h5{padding-top:0;}[type="submit"]::-moz-focus-inner{border-bottom-style:none;}[type="submit"]::-moz-focus-inner{border-right-style:none;}[type="submit"]::-moz-focus-inner{border-top-style:none;}[type="submit"]::-moz-focus-inner{padding-left:0;}*{border-bottom-width:0;}[type="submit"]::-moz-focus-inner{padding-bottom:0;}*{border-right-width:0;}[type="submit"]::-moz-focus-inner{padding-right:0;}[type="submit"]::-moz-focus-inner{padding-top:0;}*{border-top-width:0;}[type="button"]:-moz-focus{outline:.0625pc dotted ButtonText;}[type="reset"]:-moz-focus{outline:.0625pc dotted ButtonText;}[type="submit"]:-moz-focus{outline:.0625pc dotted ButtonText;}[class~=modal]{display:none;}</style>
+  <style data-tag="default-style-sheet">
+    html{font-family:Inter;}[class~=modal]{position:fixed;}[class~=modal]{top:0;}[class~=modal]{left:0;}button{background-color:transparent;}optgroup,button,select,input,textarea{font-family:inherit;}input,button,textarea,optgroup,select{font-size:100%;}textarea,optgroup,select,input,button,body{line-height:1.15;}*{border-left-style:solid;}*{border-bottom-style:solid;}[class~=modal]{width:100%;}[class~=modal]{height:100%;}input,select,optgroup,textarea{margin-left:0;}textarea,optgroup,input,select{margin-bottom:0;}textarea,select,optgroup,input{margin-right:0;}[class~=modal]{background-color:rgba(0,0,0,.5);}optgroup,textarea,select,input{margin-top:0;}[class~=modal]{justify-content:center;}[class~=modal]{align-items:center;}*{border-right-style:solid;}[class~=modal]{z-index:1000;}*{border-top-style:solid;}[class~=modal]{animation:fadeIn .5s ease-in-out;}[class~=modal-content]{background-color:#fff;}[class~=modal-content]{padding-left:1.25pc;}[class~=modal-content]{padding-bottom:1.25pc;}[class~=modal-content]{padding-right:1.25pc;}select,button,body{text-transform:none;}button{-webkit-appearance:button;}button::-moz-focus-inner{border-left-style:none;}button::-moz-focus-inner{border-bottom-style:none;}button::-moz-focus-inner{border-right-style:none;}button::-moz-focus-inner{border-top-style:none;}[class~=modal-content]{padding-top:1.25pc;}[class~=modal-content]{border-radius:5px;}button::-moz-focus-inner{padding-left:0;}button::-moz-focus-inner{padding-bottom:0;}button::-moz-focus-inner{padding-right:0;}button::-moz-focus-inner{padding-top:0;}button:-moz-focus{outline:.0625pc dotted ButtonText;}[class~=modal-content]{text-align:center;}a{color:inherit;}a{text-decoration:inherit;}input{padding-left:4px;}[class~=modal-content]{z-index:1001;}input{padding-bottom:.020833333in;}input{padding-right:4px;}input{padding-top:.020833333in;}img{display:block;}html{scroll-behavior:smooth;}body{font-weight:400;}[class~=modal-content]{position:relative;}body{font-style:normal;}body{text-decoration:none;}[class~=modal-content]{animation:slideIn .5s ease-in-out;}body{letter-spacing:normal;}body{color:var(--dl-color-gray-black);}body{background-color:var(--dl-color-gray-white);}iframe{width:100%;}iframe{height:100%;}iframe{border-left-width:medium;}iframe{border-bottom-width:medium;}[class~=close-button]{position:absolute;}iframe{border-right-width:medium;}[class~=close-button]{top:10px;}[class~=close-button]{right:7.5pt;}iframe{border-top-width:medium;}[class~=close-button]{cursor:pointer;}iframe{border-left-style:none;}iframe{border-bottom-style:none;}iframe{border-right-style:none;}iframe{border-top-style:none;}[class~=iframe-container]{height:330pt;}iframe{border-left-color:currentColor;}iframe{border-bottom-color:currentColor;}iframe{border-right-color:currentColor;}iframe{border-top-color:currentColor;}iframe{border-image:none;}</style>
+  <style data-tag="default-style-sheet">
+    html{font-size:12pt;}@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}@keyframes fadeOut{from{opacity:1;}to{opacity:0;}}.modal.closing{animation:fadeOut .5s ease-in-out;}[class~=modal][class~=closing] [class~=modal-content]{animation:slideOut .5s ease-in-out;}@keyframes slideOut{from{transform:translateY(0);}to{transform:translateY(-20px);}}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+  <link rel="shortcut icon" href="public/mlbb-logo1.webp" type="icon/png" sizes="32x32" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khmer:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dangrek:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+</head>
+
+<body>
+  <link rel="stylesheet" href="./style.css" />
+  <div>
+    <link href="./index.css" rel="stylesheet" />
+
+    <div class="home-container">
+      <header data-role="Header" class="home-header">
+        <img alt="logo" src="./public/logo3.jpg" class="home-logo" />
+        <h1 class="home-text">PHUNGSTORE</h1>
+      </header>
+      <img alt="image" src="public/baner-1500w.jpg" class="home-image" />
+      <div  id="header"  class="home-mobilelygen">
+        <img alt="image" src="public/mlbb-logo-400h.webp" class="home-image01" />
+        <h1 class="home-text01">Mobile Legends: Bang Bang</h1>
+        <img alt="image" src="public/picture3-400h.png" class="home-image02" />
+        <span class="home-text02">Secured payment</span>
+        <span class="home-text03">Cambodia</span>
+        <span class="home-text04">
+          ទិញពេជ្រ Mobile Legends: Bang Bang ក្នុងតម្លៃសមរម្យ! តាមរយះអាយឌី ID
+          របស់អ្នក, ជ្រើសរើសកញ្ចប់ពេជ្យ ដែលអ្នកពេញចិត្តទិញ,
+          ដោយបង់ប្រាក់តាមមធ្យោបាយដែលអ្នកមាន, ពេជ្រនឹងបញ្ជូនទៅក្នុងគណនេយ្យ MLBB
+          របស់អ្នកក្នុងរយះពេលពីចន្លោះ 10នាទី ដល់ 3ម៉ោង។
+        </span>
+        <img alt="image" src="public/cambodia-flag-400h.webp" class="home-image03" />
+        <div class="home-container01">
+          <img alt="image" src="public/abapay-200h.webp" class="home-image04" />
+          <img alt="image" src="public/khqr-200h.webp" class="home-image05" />
+          <h1 class="home-text05">Accept Payment:</h1>
+        </div>
+      </div>
+      <!-- Modal Popup -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <!-- Close button (X) -->
+          <span class="close-button" onclick="location.reload()">X</span>
+          <p><span style="font-family:Verdana,Geneva,sans-serif"><span
+                style="font-size:14px"><strong>Payment&nbsp;</strong></span></span></p>
+
+          <!-- Iframe container -->
+          <div class="iframe-container">
+            <iframe id="resultIframe" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="home-step1">
+        <span class="home-step11">1. បញ្ចូលព័ត៌មាន</span>
+        <div class="home-formbody">
+          <form name="findid" action="Post" class="home-form">
+            <div class="home-input">
+              <input type="number" id="userid" required placeholder="User ID" class="home-userid input" />
+            </div>
+            <div class="home-container02">
+              <input type="number" id="zoneid" required placeholder="Zone ID" class="home-zoneid input" />
+            </div>
+            <div class="home-button">
+              <button id="submit" type="button" class="home-button1 button" onclick="makeApiRequest()">
+                <span>
+                  <span id="buttonText">Check ID</span>
+                  <br />
+                </span>
+              </button>
+            </div>
+          </form>
+          <span class="home-text09">
+            <span>User:</span>
+            <span id="responseName" class="home-text11"><span
+                style="color: rgb(0, 13, 255);">ត្រួតពិនិត្យគណនីជាមុន</span>
+            </span>
+          </span>
+        </div>
+        <span class="home-menu">
+          ដើម្បីឃើញ UserID សូមចូលទៅក្នងហ្គេម ហើយចុចរូបភាព Avatar
+          នៅខាងឆ្វេងអេក្រង់កញ្ចក់ ហើយចុចទៅកាន់"Check ID" ពេលនោះ User ID
+          និងបង្ហាញឲ្យឃើញ បន្ទាប់មកសូមយក User ID នោះមកបំពេញ។ ឧទាហរណ៍: User ID:
+          123456789, Zone ID: 1234។
+        </span>
+      </div>
+      <div class="home-step2">
+        <span class="home-step12">2. ជ្រើសរើសកញ្ចប់</span>
+        <div class="home-container03">
+          <div id="d1" class="home-container04" onclick="selectRadio('r1')">
+            <input type="radio" id="r1" name="radio" value="0.25" checked class="home-radiobutton" />
+            <span class="home-text12">0.25$</span>
+            <span class="home-text13">11 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image06" />
+          </div>
+          <div id="d2" class="home-container05" onclick="selectRadio('r2')">
+            <input type="radio" id="r2" name="radio" value="0.50" class="home-radiobutton01" />
+            <span class="home-text14">0.50$</span>
+            <span class="home-text15">22 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image07" />
+          </div>
+          <div id="d3" class="home-container06" onclick="selectRadio('r3')">
+            <input type="radio" id="r3" name="radio" value="1.4" class="home-radiobutton02" />
+            <span class="home-text16">1.4$</span>
+            <span class="home-text17">86 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image08" />
+          </div>
+          <div id="d4" class="home-container07" onclick="selectRadio('r4')">
+            <input type="radio" id="r4" name="radio" value="1.90" class="home-radiobutton03" />
+            <span class="home-text18">1.90$</span>
+            <span class="home-text19">112 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image09" />
+          </div>
+          <div id="d5" class="home-container08" onclick="selectRadio('r5')">
+            <input type="radio" id="r5" name="radio" value="2.80" class="home-radiobutton04" />
+            <span class="home-text20">2.80$</span>
+            <span class="home-text21">172 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image10" />
+          </div>
+          <div id="d6" class="home-container09" onclick="selectRadio('r6')">
+            <input type="radio" id="r6" name="radio" value="3.70" class="home-radiobutton05" />
+            <span class="home-text22">3.70$</span>
+            <span class="home-text23">223 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image11" />
+          </div>
+          <div id="d7" class="home-container10" onclick="selectRadio('r7')">
+            <input type="radio" id="r7" name="radio" value="4.00" class="home-radiobutton06" />
+            <span class="home-text24">4.00$</span>
+            <span class="home-text25">257 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image12" />
+          </div>
+          <div id="d8" class="home-container11" onclick="selectRadio('r8')">
+            <input type="radio" id="r8" name="radio" value="5.50" class="home-radiobutton07" />
+            <span class="home-text26">5.50$</span>
+            <span class="home-text27">343 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image13" />
+          </div>
+          <div id="d9" class="home-container12" onclick="selectRadio('r9')">
+            <input type="radio" id="r9" name="radio" value="7.00" class="home-radiobutton08" />
+            <span class="home-text28">7.00$</span>
+            <span class="home-text29">429 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image14" />
+          </div>
+          <div id="d10" class="home-container13" onclick="selectRadio('r10')">
+            <input type="radio" id="r10" name="radio" value="8.00" class="home-radiobutton09" />
+            <span class="home-text30">8.00$</span>
+            <span class="home-text31">514 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image15" />
+          </div>
+          <div id="d11" class="home-container14" onclick="selectRadio('r11')">
+            <input type="radio" id="r11" name="radio" value="8.50" class="home-radiobutton10" />
+            <span class="home-text32">8.50$</span>
+            <span class="home-text33">570 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image16" />
+          </div>
+          <div id="d12" class="home-container15" onclick="selectRadio('r12')">
+            <input type="radio" id="r12" name="radio" value="9.00" class="home-radiobutton11" />
+            <span class="home-text34">9.00$</span>
+            <span class="home-text35">600 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image17" />
+          </div>
+          <div id="d13" class="home-container16" onclick="selectRadio('r13')">
+            <input type="radio" id="r13" name="radio" value="10.50" class="home-radiobutton12" />
+            <span class="home-text36">10.50$</span>
+            <span class="home-text37">706 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image18" />
+          </div>
+          <div id="d14" class="home-container17" onclick="selectRadio('r14')">
+            <input type="radio" id="r14" name="radio" value="14.00" class="home-radiobutton13" />
+            <span class="home-text38">14.00$</span>
+            <span class="home-text39">878 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image19" />
+          </div>
+          <div id="d15" class="home-container18" onclick="selectRadio('r15')">
+            <input type="radio" id="r15" name="radio" value="15.00" class="home-radiobutton14" />
+            <span class="home-text40">15.00$</span>
+            <span class="home-text41">963 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image20" />
+          </div>
+          <div id="d16" class="home-container19" onclick="selectRadio('r16')">
+            <input type="radio" id="r16" name="radio" value="16.00" class="home-radiobutton15" />
+            <span class="home-text42">16.00$</span>
+            <span class="home-text43">
+              <span class="subtlesubtle home-text44">1046</span>
+              <span>Diamond</span>
+              <span class="subtlesubtle home-text46">&nbsp;</span>
+            </span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image21" />
+          </div>
+          <div id="d17" class="home-container20" onclick="selectRadio('r17')">
+            <input type="radio" id="r17" name="radio" value="21.00" class="home-radiobutton16" />
+            <span class="home-text47">21.00$</span>
+            <span class="home-text48">1412 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image22" />
+          </div>
+          <div id="d18" class="home-container21" onclick="selectRadio('r18')">
+            <input type="radio" id="r18" name="radio" value="23.50" class="home-radiobutton17" />
+            <span class="home-text49">23.50$</span>
+            <span class="home-text50">1584 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image23" />
+          </div>
+          <div id="d19" class="home-container22" onclick="selectRadio('r19')">
+            <input type="radio" id="r19" name="radio" value="32.00" class="home-radiobutton18" />
+            <span class="home-text51">32.00$</span>
+            <span class="home-text52">2195 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image24" />
+          </div>
+          <div id="d20" class="home-container23" onclick="selectRadio('r20')">
+            <input type="radio" id="r20" name="radio" value="52.00" class="home-radiobutton19" />
+            <span class="home-text53">52.00$</span>
+            <span class="home-text54">3688 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image25" />
+          </div>
+          <div id="d21" class="home-container24" onclick="selectRadio('r21')">
+            <input type="radio" id="r21" name="radio" value="78.00" class="home-radiobutton20" />
+            <span class="home-text55">78.00$</span>
+            <span class="home-text56">5532 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image26" />
+          </div>
+          <div id="d22" class="home-container25" onclick="selectRadio('r22')">
+            <input type="radio" id="r22" name="radio" value="86.00" class="home-radiobutton21" />
+            <span class="home-text57">86.00$</span>
+            <span class="home-text58">6046 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image27" />
+          </div>
+          <div id="d23" class="home-container26" onclick="selectRadio('r23')">
+            <input type="radio" id="r23" name="radio" value="109" class="home-radiobutton22" />
+            <span class="home-text59">109$</span>
+            <span class="home-text60">7727 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image28" />
+          </div>
+          <div id="d24" class="home-container27" onclick="selectRadio('r24')">
+            <input type="radio" id="r24" name="radio" value="133" class="home-radiobutton23" />
+            <span class="home-text61">133$</span>
+            <span class="home-text62">9288 Diamond&nbsp;</span>
+            <img alt="image" src="public/single_diamond_081cbe4191-200h.webp" class="home-image29" />
+          </div>
+          <div id="d25" class="home-container28" onclick="selectRadio('r25')">
+            <input type="radio" id="r25" name="radio" value="6.00" class="home-radiobutton24" />
+            <span class="home-text63">6.00$</span>
+            <span class="home-text64">
+              <span class="home-text65">Weekly pass</span>
+              <br class="home-text66" />
+              <span class="home-text67">+257</span>
+              <br />
+            </span>
+            <img alt="image" src="public/weekly_f40c8a7fbc-200h.webp" class="home-image30" />
+          </div>
+          <div id="d26" class="home-container29" onclick="selectRadio('r26')">
+            <input type="radio" id="r26" name="radio" value="10.00" class="home-radiobutton25" />
+            <span class="home-text69">10.00$</span>
+            <span class="home-text70">Twillight past</span>
+            <img alt="image" src="public/starlight_e282cafca1-200h.webp" class="home-image31" />
+          </div>
+          <div id="d27" class="home-container30" onclick="selectRadio('r27')">
+            <input type="radio" id="r27" name="radio" value="1.80" class="home-radiobutton26" />
+            <span class="home-text71">1.80$</span>
+            <span class="home-text72">Weeekly pass</span>
+            <img alt="image" src="public/weekly_f40c8a7fbc-200h.webp" class="home-image32" />
+          </div>
+        </div>
+      </div>
+      <div class="home-step3">
+        <h1 class="home-totol">
+          <span>Total:</span>
+          <span id="totalAmount" class="home-text74">0.00$</span>
+        </h1>
+
+        <div class="home-paybody">
+          <div class="home-aba" onclick="showModal(); updateRadioValue('aba')">
+            <button type="button" disabled class="home-button2 button">
+              <span class="home-text76">
+                <span>ABA PAY</span>
+                <br />
+              </span>
+              <img alt="image" src="public/abapay-200h.webp" class="home-image33" />
+              <span class="home-text79">Scan to pay with mobile app ABA</span>
+              <svg viewBox="0 0 1024 1024" class="home-icon">
+                <path d="M426 256l256 256-256 256-60-60 196-196-196-196z"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="home-khqr" onclick="showModal(); updateRadioValue('khqr')">
+            <button type="button" disabled class="home-button3 button">
+              <span class="home-pay">
+                <span>KHQR</span>
+                <br />
+              </span>
+              <img alt="image" src="public/khqr-200h.webp" class="home-khqr1" />
+              <span class="home-subtle">
+                Scan with mobile app support khqr
+              </span>
+              <svg viewBox="0 0 1024 1024" class="home-icon02">
+                <path d="M426 256l256 256-256 256-60-60 196-196-196-196z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <span class="home-step13">3.​ការទូទាត់ប្រាក់</span>
+      </div>
+      <div class="home-footer">
+        <a href="http://127.0.0.1:5500/index.html" target="_blank" rel="noreferrer noopener" class="home-link">
+          <svg viewBox="0 0 602.2582857142856 1024" class="home-icon04">
+            <path
+              d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z">
+            </path>
+          </svg>
+        </a>
+        <a href="http://127.0.0.1:5500/index.html" target="_blank" rel="noreferrer noopener" class="home-link1">
+          <svg viewBox="0 0 1024 1024" class="home-icon06">
+            <path
+              d="M679.429 746.857l84-396c7.429-34.857-12.571-48.571-35.429-40l-493.714 190.286c-33.714 13.143-33.143 32-5.714 40.571l126.286 39.429 293.143-184.571c13.714-9.143 26.286-4 16 5.143l-237.143 214.286-9.143 130.286c13.143 0 18.857-5.714 25.714-12.571l61.714-59.429 128 94.286c23.429 13.143 40 6.286 46.286-21.714zM1024 512c0 282.857-229.143 512-512 512s-512-229.143-512-512 229.143-512 512-512 512 229.143 512 512z">
+            </path>
+          </svg>
+        </a>
+        <a href="http://127.0.0.1:5500/index.html" target="_blank" rel="noreferrer noopener" class="home-link2">
+          <svg viewBox="0 0 1024 1024" class="home-icon08">
+            <path
+              d="M938.667 490.539v-21.205c0-0.725-0.043-1.621-0.085-2.475-5.803-99.755-47.488-190.336-112.768-258.176-68.352-71.125-162.731-117.419-268.843-123.264-0.64-0.043-1.493-0.085-2.304-0.085h-20.864c-59.947-0.683-122.965 13.227-181.931 43.008-52.181 26.539-97.749 63.531-133.931 108.203-56.405 69.675-89.899 158.037-89.941 253.653-0.597 54.4 10.795 111.36 35.157 165.419l-75.605 226.859c-2.816 8.363-3.072 17.835 0 26.965 7.467 22.357 31.616 34.432 53.973 26.965l226.731-75.563c49.493 22.485 105.984 35.243 165.376 35.115 58.539-0.384 115.84-13.141 168.149-36.949 81.579-37.163 151.040-101.248 193.707-186.667 27.477-53.291 43.307-115.84 43.136-181.803zM853.333 490.795c0.128 52.267-12.459 101.333-33.664 142.464-34.176 68.352-88.832 118.784-153.259 148.139-41.387 18.859-86.869 28.971-133.376 29.312-52.096 0.128-101.163-12.459-142.293-33.664-10.624-5.504-22.528-6.059-33.067-2.56l-162.261 54.101 54.101-162.261c3.755-11.221 2.56-22.912-2.389-32.725-23.552-46.72-34.304-96.213-33.792-142.464 0.043-76.331 26.411-145.877 70.912-200.917 28.629-35.328 64.768-64.725 106.283-85.76 46.592-23.552 96.085-34.304 142.336-33.792h19.456c83.712 4.565 158.037 41.003 212.011 97.109 51.285 53.376 84.139 124.416 89.003 202.837z">
+            </path>
+          </svg>
+        </a>
+        <span class="home-text82">Contact Us:</span>
+        <div class="home-container31">
+          <img alt="image" src="public/abapay-200h.webp" class="home-image34" />
+          <img alt="image" src="public/khqr-200h.webp" class="home-image35" />
+          <h1 class="home-text83">Accept Payment:</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    function selectRadio(radioId) {
+      // Uncheck all radio buttons first
+      var radioButtons = document.getElementsByName('radio');
+      radioButtons.forEach(button => {
+        button.checked = false;
+      });
+
+      // Check the selected radio button
+      var selectedRadio = document.getElementById(radioId);
+      selectedRadio.checked = true;
+
+      // Set the radioValue based on the checked radio button's value
+      var radioValue = selectedRadio.value;
+
+      // Update the iframe source with the actual values and checked radio ID
+      var userId = document.getElementById('userid').value;
+      var zoneId = document.getElementById('zoneid').value;
+      var iframe = document.getElementById("resultIframe");
+      iframe.src = "/qr/request.php?userid=" + userId + "&zoneid=" + zoneId + "&amount=" + radioValue;
+
+      // Update the total amount display
+      updateTotalAmount(radioValue);
+    }
+
+    function updateTotalAmount(amount) {
+      const totalAmountSpan = document.getElementById('totalAmount');
+      totalAmountSpan.innerText = amount + '$';
+    }
+
+    // Initial update with the default selected radio button value
+    const checkedRadio = document.querySelector('input[name="radio"]:checked');
+    if (checkedRadio) {
+      updateTotalAmount(checkedRadio.value);
+    }
+    //stroll
+    // JavaScript code to scroll to the header on page reload
+        window.onload = function() {
+            // Get the header element by its id
+            var header = document.getElementById('header');
+
+            // Check if the header element exists
+            if (header) {
+                // Use the scrollIntoView method to scroll to the header
+                header.scrollIntoView();
+            }
+        };
+  </script>
+</body>
+
+</html>
