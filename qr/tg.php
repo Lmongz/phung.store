@@ -7,10 +7,10 @@ $telegramBotToken = '6535027872:AAG3-fPLoyU_HkE0gdYI0jXj-olNU35tYhE';
 $telegramChatId = '4797200459';
 
 // Connect to your MySQL database
-$servername = "localhost";
-$username = "sxtxusothea_mou";
-$password = "sxtxusothea_mo";
-$database = "sxtxusothea_mo";
+$servername = "lmongz.github.io";
+$username = "choumong";
+$password = "lmonglie";
+$database = "lmong_lie";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
