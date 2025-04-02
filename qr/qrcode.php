@@ -3,7 +3,7 @@
 $transaction = $_GET['transaction'];
 
 // Connect to your MySQL database
-$servername = "localhost";
+$servername = "lmongz.github.io";
 $username = "choumong";
 $password = "lmonglie";
 $database = "lmong_lie";
@@ -204,7 +204,7 @@ $conn->close();
           <span>3:00</span>
           <br />
         </span>
-        <span id="name" class="qrcode-name">ROVYTOP</span>
+        <span id="name" class="qrcode-name">Phung Store</span>
         <span id="currency" class="qrcode-currency">$</span>
         <span id="amount" class="qrcode-amount"><?php echo $amount; ?></span>
         <div class="qrcode-head">
