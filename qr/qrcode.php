@@ -5,10 +5,11 @@ $transaction = $_GET['transaction'];
 // Connect to your MySQL database
 $servername = "lmongz.github.io";
 $username = "choumong";
+$port = "3306";
 $password = "lmonglie";
 $database = "lmong_lie";
 
-$conn = new mysqli($servername, $username, $password, $database);
+$conn = new mysqli($servername, $username, $password, $database, $port);
 
 // Check the connection
 if ($conn->connect_error) {
