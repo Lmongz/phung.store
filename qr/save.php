@@ -10,10 +10,10 @@ $zoneId = $_GET['zoneid'];
 $transaction = substr(md5(mt_rand()), 0, 8);
 
 // Connect to your MySQL database
-$servername = "localhost";
-$username = "sxtxusothea_mou";
-$password = "sxtxusothea_mo";
-$database = "sxtxusothea_mo";
+$servername = "lmongz.github.io";
+$username = "choumong";
+$password = "lmonglie";
+$database = "lmong_lie";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
