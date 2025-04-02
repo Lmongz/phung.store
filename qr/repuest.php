@@ -20,7 +20,7 @@
                 merchantName: "Horm Choumong",
                 merchantCity: "Phnom Penh",
                 merchantId: "1246288",
-                acquiringBank: "ABA Bank",
+                acquiringBank: "Bakong Bank",
             };
 
             // Get amount and user from URL parameters
