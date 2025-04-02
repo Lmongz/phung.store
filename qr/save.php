@@ -16,7 +16,7 @@ $username = "choumong";
 $password = "lmonglie";
 $database = "lmong_lie";
 
-$conn = new mysqli($servername, $port; $username, $password, $database);
+$conn = new mysqli($servername, $port, $username, $password, $database);
 
 // Check the connection
 if ($conn->connect_error) {
